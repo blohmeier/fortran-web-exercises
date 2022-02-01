@@ -4,7 +4,7 @@
 1. Navigate to your home (~) directory
 1. Navigate to ~/desktop
 1. Create a directory (or use the one you made earlier) called codeup-web-exercises
-1. Create a file called test.txt inside of cli-test
+1. Create a file called test.txt inside of codeup-web-exercises
 1. Delete the test.txt file
 1. Create a directory called sub-test inside the codeup-web-exercises folder
 1. Navigate inside of sub-test

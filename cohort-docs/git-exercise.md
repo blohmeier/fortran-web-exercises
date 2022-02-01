@@ -3,26 +3,30 @@
 Open codeup-web-exercises in IntelliJ and do the following in the IntelliJ terminal...
 
 1. Create a text file in the root project directory (codeup-web-exercises) called git-test.txt
-1. Check the status of your Git repository
-1. Add git-test.txt to the staging area of Git
-1. Remove git-test.txt from staging
-1. Add git-test.txt again to staging
-1. Commit the change
-1. Check the log of previous commits
-1. Add the text "Getting Git is legit."
-1. Check status
-1. Add the change to staging
-1. Commit the change
-1. Type another line in git-test.txt
-1. Add and commit the change
-1. Check your log again
-1. Use the terminal to create a .gitignore file
-1. In the .gitignore, add the following:
+2. Check the status of your Git repository
+3. Add git-test.txt to the staging area of Git
+4. Remove git-test.txt from staging
+5. Add git-test.txt again to staging
+6. Commit the change
+7. Check the log of previous commits
+8. Add the text "Getting Git is legit."
+9. Check status
+10. Add the change to staging
+11. Commit the change
+12. Type another line in git-test.txt
+13. Add and commit the change
+14. Check your log again
+15. Use the terminal to create a .gitignore file
+16. In the .gitignore file, add the following: 
+    1. .idea
+    2. *.iml
+    3. DStore
+17. In the .gitignore, add the following:
   secret.txt
-1. Add the change and commit
-1. Create a secret.txt file in your project
-1. Check the status (secret.txt should not be indicated in status)
-1. Push your work up to GitHub
+18. Add the change and commit
+19. Create a secret.txt file in your project
+20. Check the status (secret.txt should not be indicated in status)
+21. Push your work up to GitHub
 
 GREEN CUP!
 
