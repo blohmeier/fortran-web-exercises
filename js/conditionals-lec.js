@@ -47,22 +47,36 @@ function getToDestination(age, isInsured, hasCar, canGetRideShare) {
     if (age >= 16 && isInsured && hasCar) {
         console.log("You can use your own vehicle")
     } else if (age < 16 || !isInsured || !hasCar) {
+        //let canGetRideShareVar = canGetRideShare();
+        console.log("Function output of canGetRideShare function is: " + canGetRideShare);
         if (canGetRideShare) {
-            console.log("Call up a rideshare service")
+            console.log("You can get a rideshare. Call up a rideshare service")
         } else {
-            console.log("Call a friend for a ride")
+            console.log("You cannot get a rideshare. Call a friend for a ride")
         }
     }
 }
-getToDestination(16, true, true, true);
+//getToDestination(16, true, true, true);
+
 // getToDestination, part 2
 // Create a function called canGetRideshare() which will RETURN a boolean
 // It will determine if there are drivers nearby and the person has enough money for the ride
 // Now, when you call getToDestination(), instead of passing in a canGetRideShare parameter
 // Call canGetRideshare() in the else if after !isLegalDriver &&...
 // Be sure to log to the user if they can or cannot get a rideshare
-// var driversNearby = true;
-// var hasEnoughMoney = false;
+function canGetRideShare(driversNearby, hasEnoughMoney) {
+    //let driversNearby = false;
+    //let hasEnoughMoney = true;
+    if (driversNearby && hasEnoughMoney) {
+        var returnTrue = true;
+        return returnTrue;
+    } else {
+        var returnFalse = false;
+        return returnFalse;
+    }
+}
+getToDestination(14, true, true, canGetRideShare(true,false));
+
 // var hasCar = false;
 // var canGetRideShare = false;
 //
