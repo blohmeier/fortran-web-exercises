@@ -284,10 +284,68 @@
 //     }
 // }
 // Instructor solution
-var userChoice = confirm("Do you want to enter a number?");
+// Part 1:
+// var userChoice = confirm("Do you want to enter a number?");
+//
+// if (userChoice) {
+//     // do number stuff
+//
+//     // even or odd
+//     var userNumber = parseInt(prompt("Enter a number: "));
+//
+//     if (isNaN(userNumber)) {
+//         alert("Hey that's not a number")
+//     } else {
+//
+//         if (userNumber % 2 === 0) {
+//             alert("Your number is even");
+//         } else {
+//             alert("Your number is odd");
+//         }
+//
+//         // plus 100
+//         alert("Your number plus 100 is: " + (userNumber + 100));
+//
+//         // positive or negative
+//         if (userNumber > 0) {
+//             alert("Your number is positive");
+//         } else {
+//             alert("Your number is negative");
+//         }
+//     }
+//
+// } else {
+//     alert("OK, bye!")
+// }
+// Part 2 (refactored version of Part 1):
 
-if (userChoice) {
-    // do number stuff
-} else {
-    alert("OK, bye!")
+function executeChoice() {
+    let choice = confirm("Would you like to enter a number?");
+    if (choice) {
+        custEntersNum(prompt("Please enter a number"));
+    } else {
+        alert("OK, bye");
+    }
 }
+
+function custEntersNum(num) {
+    if (isNaN(num)) {
+        alert("Need to enter a number type");
+        num = prompt("Please enter a number");
+    }
+    num = parseInt(num);
+    if (num % 2 !== 0) {
+        alert("Number was odd")
+    } else {
+        alert("Numbere was even")
+    }
+    if (num < 0) {
+        alert("Number was negative")
+    } else {
+        alert("Number was positive")
+    }
+    alert("Number plus 100 is: " + (num + 100))
+}
+executeChoice();
+
+// Part 3 (improved version of Part 2):
