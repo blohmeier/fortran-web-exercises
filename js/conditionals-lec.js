@@ -125,24 +125,24 @@
 // checkWeather("bs value");
 
 //Mini-Exercise 3 (starting at 2:43pm)
-function checkWeather(todaysWeather) {
-    todaysWeather = todaysWeather.toLowerCase();
-    switch (todaysWeather) {
-        case "snowing":
-            console.log("Please stay inside");
-            break;
-        case "raining":
-            console.log("Grab an umbrella");
-            break;
-        case "hailing":
-            console.log("Cover your car");
-            break;
-        default:
-            console.log("Go play in the sun :)");
-            break;
-    }
-}
-checkWeather("snowing");
-checkWeather("bs value");
-checkWeather("raining");
-checkWeather("HAILING");
+// function checkWeather(todaysWeather) {
+//     todaysWeather = todaysWeather.toLowerCase();
+//     switch (todaysWeather) {
+//         case "snowing":
+//             console.log("Please stay inside");
+//             break;
+//         case "raining":
+//             console.log("Grab an umbrella");
+//             break;
+//         case "hailing":
+//             console.log("Cover your car");
+//             break;
+//         default:
+//             console.log("Go play in the sun :)");
+//             break;
+//     }
+// }
+// checkWeather("snowing");
+// checkWeather("bs value");
+// checkWeather("raining");
+// checkWeather("HAILING");
