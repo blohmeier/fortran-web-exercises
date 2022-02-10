@@ -9,24 +9,24 @@ Write a function called sumOfSquares(a, b).
 You should find the square of a, then the square of b.
 Invoke add(num1, num2) and pass the new squared values in as arguments.
  */
-function add(num1, num2) {
-    return num1 + num2;
-}
-console.log(add(2,3));
-
-function square(numToSqr) {
-    return numToSqr * numToSqr;
-}
-console.log(square(2));
-
-function sumOfSquares(a, b) {
-    let aSquare = square(a);
-    //console.log(aSquare);
-    let bSquare = square(b);
-    //console.log(bSquare);
-    return total = add(aSquare ,bSquare)
-}
-console.log((sumOfSquares(4,6)));
+// function add(num1, num2) {
+//     return num1 + num2;
+// }
+// console.log(add(2,3));
+//
+// function square(numToSqr) {
+//     return numToSqr * numToSqr;
+// }
+// console.log(square(2));
+//
+// function sumOfSquares(a, b) {
+//     let aSquare = square(a);
+//     //console.log(aSquare);
+//     let bSquare = square(b);
+//     //console.log(bSquare);
+//     return total = add(aSquare ,bSquare)
+// }
+// console.log((sumOfSquares(4,6)));
 /*-->
 B) FIZZ-BUZZZZZZZ
 Write a function named getFizzBuzz(startingNum) which performs the following actions:
@@ -40,7 +40,9 @@ Thinking about getFizzBuzz(startingNum), let's console log the return value of t
 What if getFizzBuzz doesn't return a value (VOID)?
 How do you want to handle that?
  */
+function getFizzBuzz(startingNum) {
 
+}
 /*-->
 WHILE LOOPS WITH FUNCTIONS
 A) getPaswordInput
