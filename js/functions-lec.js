@@ -59,7 +59,6 @@
 //
 // scopingFun();
 
-
 // TODO: Write a function to 'determine' if a driver is available to accept the ride
 //  -> You can have the user give their location and mock up the location of the driver
 //  -> ie: the driver is in Dallas, so they must give you either ['Dallas', 'Irving', 'Plano', 'Duncanville', or 'Richardson']
