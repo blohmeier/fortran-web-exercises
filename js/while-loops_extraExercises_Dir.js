@@ -41,8 +41,21 @@ What if getFizzBuzz doesn't return a value (VOID)?
 How do you want to handle that?
  */
 function getFizzBuzz(startingNum) {
-
+    if (startingNum % 3 === 0 && startingNum % 5 !== 0) {
+        console.log("fizz");
+    } else if (startingNum % 5 === 0 && startingNum % 3 !== 0) {
+        console.log("buzz");
+    } else if (startingNum % 3 === 0 && startingNum % 5 === 0) {
+        console.log("FIZZ BUZZ");
+    } else {
+        console.log("VOID!!!");
+    }
+    //return
 }
+console.log(getFizzBuzz(3));
+console.log(getFizzBuzz(5));
+console.log(getFizzBuzz(15));
+console.log(getFizzBuzz("tomato"));
 /*-->
 WHILE LOOPS WITH FUNCTIONS
 A) getPaswordInput
