@@ -40,22 +40,22 @@ Thinking about getFizzBuzz(startingNum), let's console log the return value of t
 What if getFizzBuzz doesn't return a value (VOID)?
 How do you want to handle that?
  */
-function getFizzBuzz(startingNum) {
-    if (startingNum % 3 === 0 && startingNum % 5 !== 0) {
-        console.log("fizz");
-    } else if (startingNum % 5 === 0 && startingNum % 3 !== 0) {
-        console.log("buzz");
-    } else if (startingNum % 3 === 0 && startingNum % 5 === 0) {
-        console.log("FIZZ BUZZ");
-    } else {
-        console.log("VOID!!!");
-    }
-    //return
-}
-console.log(getFizzBuzz(3));
-console.log(getFizzBuzz(5));
-console.log(getFizzBuzz(15));
-console.log(getFizzBuzz("tomato"));
+// function getFizzBuzz(startingNum) {
+//     if (startingNum % 3 === 0 && startingNum % 5 !== 0) {
+//         console.log("fizz");
+//     } else if (startingNum % 5 === 0 && startingNum % 3 !== 0) {
+//         console.log("buzz");
+//     } else if (startingNum % 3 === 0 && startingNum % 5 === 0) {
+//         console.log("FIZZ BUZZ");
+//     } else {
+//         console.log("VOID!!!");
+//     }
+//     //return
+// }
+// console.log(getFizzBuzz(3));
+// console.log(getFizzBuzz(5));
+// console.log(getFizzBuzz(15));
+// console.log(getFizzBuzz("tomato"));
 /*-->
 WHILE LOOPS WITH FUNCTIONS
 A) getPaswordInput
@@ -63,7 +63,17 @@ Define a function named getPassword() which performs the following actions:
 Using prompt(), alert(), variables, and a while-loop, ask the user to input their password until their entry matches your hard-coded password value.
 HINT: start by defining the correct password and don't forget to link your html file
  */
-
+// function getPassword () {
+//     var pin = "secret";
+//     var input = prompt("Welcome please enter your password:");
+//     while (input != pin)
+//     {
+//         alert("Wrong, please try again");
+//         input = prompt("Enter password");
+//     }
+//     alert("Accepted");
+// }
+// getPassword();
 /*-->
 B) getMeaningOfLife
 Write a function named getMeaningOfLife which accepts one parameter, meaningfulNum.
@@ -74,7 +84,17 @@ Thinking about the above function, getMeaningOfLife, let's ask a question: What 
 Write some code to account for this case. How the function handles the situation is up to you!
 Let's continue with getMeaningOfLife: If the value of meaningfulNum happens to be 42, console log a separate message at the end of the function to say: "Did you bring your towel?"
  */
-
+//function getPassword () {
+//     var pin = "secret";
+//     var input = prompt("Welcome please enter your password:");
+//     while (input != pin)
+//     {
+//         alert("Wrong, please try again");
+//         input = prompt("Enter password");
+//     }
+//     alert("Accepted");
+// }
+// getPassword();
 /*-->
 LESSON EXERCISE WALK-THRU
 --> While Loops

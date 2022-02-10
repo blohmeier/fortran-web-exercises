@@ -392,7 +392,6 @@ function calculateTotal(luckyNumber, totalAmount) {
 //         alert("Hey that's not a number")
 //     } else {
 //
-=======
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
@@ -428,7 +427,6 @@ function calculateTotal(luckyNumber, totalAmount) {
 //     }
 //
 // } else {
-<<<<<<< HEAD
 //     alert("OK, bye!")
 // }
 // Part 2 (refactored version of Part 1):
@@ -460,10 +458,8 @@ function custEntersNum(num) {
     }
     alert("Number plus 100 is: " + (num + 100))
 }
-executeChoice();
 
 // Part 3 (improved version of Part 2):
-=======
 //     alert("Ok, bye!");
 // }
 
@@ -512,6 +508,3 @@ function alertPosOrNeg(num) {
         alert("Your number is negative");
     }
 }
-
-executeUserChoice();
->>>>>>> 4de169cfa6d543f752f63f7a73506ed7f69e8573
