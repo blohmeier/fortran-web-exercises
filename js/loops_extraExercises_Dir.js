@@ -28,21 +28,31 @@
 // first50fib2 ();
 
 //Attempt 3: Recursive with Memoization - much faster.
-function fibonacci(element, cache = []) {
-    if (element === 0) return 0;
-    if (element === 1) return 1;
-    if (cache[element]) return cache[element];
+// function fibonacci(element, cache = []) {
+//     if (element === 0) return 0;
+//     if (element === 1) return 1;
+//     if (cache[element]) return cache[element];
+//
+//     cache[element] = fibonacci(element - 2, cache) + fibonacci(element - 1, cache);
+//     return cache[element];
+// }
+// function first50fib3 () {
+//     for (let i = 1; i <= 50; i++) {
+//         console.log("Fibonacci Sequence at term " + i + " results in: " + fibonacci(i));
+//     }
+// }
+// first50fib3 ();
 
-    cache[element] = fibonacci(element - 2, cache) + fibonacci(element - 1, cache);
-    return cache[element];
-}
-function first50fib3 () {
-    for (let i = 1; i <= 50; i++) {
-        console.log("Fibonacci Sequence at term " + i + " results in: " + fibonacci(i));
-    }
-}
-first50fib3 ();
-
+//Attempt 4: Binet's formula - fastest. Source: https://betterprogramming.pub/fibonacci-algorithm-in-javascript-45743f3a0ff6
+// function binet(n) {
+//     return Math.round((Math.pow(1.618033988749895, n) - Math.pow(-0.6180339887498949, n)) / 2.23606797749979);
+// }
+// function first50fib4 () {
+//     for (let i = 1; i <= 50; i++) {
+//         console.log("Fibonacci Sequence at term " + i + " results in: " + binet(i));
+//     }
+// }
+// first50fib4 ();
 /* -->
 // Write the code necessary to output the first 50 prime numbers // Recommend starting your loop at 1 and ending your loop once you've calculated 50 primes. // https://en.wikipedia.org/wiki/Prime_number
  */
@@ -116,3 +126,15 @@ first50fib3 ();
 //         return bytes;
 //     }
 // }
+//Test js
+//Can you explain how this works?
+
+    let a = [1, 23, 100,99, 4, 3]
+
+console.log(a);
+
+a.sort(function(a,b) {
+    return a - b;
+});
+
+console.log(a)
