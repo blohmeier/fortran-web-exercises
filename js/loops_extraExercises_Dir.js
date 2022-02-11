@@ -2,14 +2,34 @@
 /* -->
 // Write a loop that outputs the first 50 fibonacci numbers. // https://en.wikipedia.org/wiki/Fibonacci_number // Recommend starting your loop at 1 and ending your loop once you've calculated 50 fibonacci numbers.
  */
-// let num1 = 0, num2 = 1, nextNum;
-// for (let i = 1; i <= 50; i++) {
-//     console.log("Fibonacci Sequence at term " + i + " results in: " + num1);
-//     nextNum = num1 + num2;
-//     num1 = num2;
-//     num2 = nextNum;
+//Attempt 1
+// function first50fib1 () {
+//     let num1 = 0, num2 = 1, nextFib;
+//     for (let i = 1; i <= 50; i++) {
+//         console.log("Fibonacci Sequence at term " + i + " results in: " + num1);
+//         nextFib = num1 + num2;
+//         num1 = num2;
+//         num2 = nextFib;
+//     }
 // }
+// first50fib1 ();
+
+// Attempt 2: recursive algo - time complexity is exponential: O(2^N).
+function fibonacci(element) {
+    if (element === 0) return 0;
+    if (element === 1) return 1;
+    return fibonacci(element - 2) + fibonacci(element - 1);
+}
+function first50fib2 () {
+    for (let i = 1; i <= 50; i++) {
+        console.log("Fibonacci Sequence at term " + i + " results in: " + fibonacci(i));
+    }
+}
+first50fib2 ();
+
 /* -->
+
+
 // Write the code necessary to output the first 50 prime numbers // Recommend starting your loop at 1 and ending your loop once you've calculated 50 primes. // https://en.wikipedia.org/wiki/Prime_number
  */
 //Attempt 1: Not working (incorrectly says 1 is prime).
@@ -27,29 +47,29 @@
 //     }
 // }
 // Attempt 2: works for all values.
-for (let i = 1, k = 1; k <= 50; i++) {
-    if (test_prime(i)) {
-        console.log("Prime number " + k + " is " + i);
-        k++;
-    }
-
-}
-function test_prime(n)
-{
-    if (n===1) {
-        return false;
-    }
-    else if (n === 2) {
-        return true;
-    } else {
-        for(let x = 2; x < n; x++) {
-            if(n % x === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-}
+// for (let i = 1, k = 1; k <= 50; i++) {
+//     if (test_prime(i)) {
+//         console.log("Prime number " + k + " is " + i);
+//         k++;
+//     }
+//
+// }
+// function test_prime(n)
+// {
+//     if (n===1) {
+//         return false;
+//     }
+//     else if (n === 2) {
+//         return true;
+//     } else {
+//         for(let x = 2; x < n; x++) {
+//             if(n % x === 0) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
 
 //console.log(test_prime(37));
 // console.log(roughSizeOfObject(k));
