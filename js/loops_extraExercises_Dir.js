@@ -14,22 +14,36 @@
 // }
 // first50fib1 ();
 
-// Attempt 2: recursive algo - time complexity is exponential: O(2^N).
-function fibonacci(element) {
+// Attempt 2: recursive algo - TOO SLOW! Time complexity is exponential: O(2^N).
+// function fibonacci(element) {
+//     if (element === 0) return 0;
+//     if (element === 1) return 1;
+//     return fibonacci(element - 2) + fibonacci(element - 1);
+// }
+// function first50fib2 () {
+//     for (let i = 1; i <= 50; i++) {
+//         console.log("Fibonacci Sequence at term " + i + " results in: " + fibonacci(i));
+//     }
+// }
+// first50fib2 ();
+
+//Attempt 3: Recursive with Memoization - much faster.
+function fibonacci(element, cache = []) {
     if (element === 0) return 0;
     if (element === 1) return 1;
-    return fibonacci(element - 2) + fibonacci(element - 1);
+    if (cache[element]) return cache[element];
+
+    cache[element] = fibonacci(element - 2, cache) + fibonacci(element - 1, cache);
+    return cache[element];
 }
-function first50fib2 () {
+function first50fib3 () {
     for (let i = 1; i <= 50; i++) {
         console.log("Fibonacci Sequence at term " + i + " results in: " + fibonacci(i));
     }
 }
-first50fib2 ();
+first50fib3 ();
 
 /* -->
-
-
 // Write the code necessary to output the first 50 prime numbers // Recommend starting your loop at 1 and ending your loop once you've calculated 50 primes. // https://en.wikipedia.org/wiki/Prime_number
  */
 //Attempt 1: Not working (incorrectly says 1 is prime).
