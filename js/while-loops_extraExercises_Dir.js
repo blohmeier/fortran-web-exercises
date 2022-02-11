@@ -84,17 +84,22 @@ Thinking about the above function, getMeaningOfLife, let's ask a question: What 
 Write some code to account for this case. How the function handles the situation is up to you!
 Let's continue with getMeaningOfLife: If the value of meaningfulNum happens to be 42, console log a separate message at the end of the function to say: "Did you bring your towel?"
  */
-//function getPassword () {
-//     var pin = "secret";
-//     var input = prompt("Welcome please enter your password:");
-//     while (input != pin)
-//     {
-//         alert("Wrong, please try again");
-//         input = prompt("Enter password");
-//     }
-//     alert("Accepted");
-// }
-// getPassword();
+function getMeaningOfLife (meaningfulNum) {
+    var counter = 0;
+    if (typeof(meaningfulNum) !== "number") {
+        console.log("Non-numeric value. Please try again.");
+    } else if (meaningfulNum === 42) {
+        console.log("Did you bring your towel?");
+    } else {
+        while (counter !== meaningfulNum) {
+            counter++
+            //console.log(counter);
+        }
+        console.log("The meaning of life, the universe, and everything is " + meaningfulNum);
+    }
+}
+getMeaningOfLife(7);
+getMeaningOfLife(42);
 /*-->
 LESSON EXERCISE WALK-THRU
 --> While Loops
