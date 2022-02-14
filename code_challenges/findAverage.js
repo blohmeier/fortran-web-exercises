@@ -7,7 +7,16 @@
 //     }
 //     return (avg / (input.length - 1));
 // }
-function findAverage (input) {
-    return input.reduce((a,b) => a + b, 0) / input.length;
+// function findAverage (input) {
+//     return input.reduce((a,b) => a + b, 0) / input.length;
+// }
+//corrected effort
+"use strict";
+function findAverage(grades) {
+    let sum = 0;
+    grades.forEach(function(grade) {
+        sum += grade;
+    })
+    return sum / grades.length
 }
 console.log(findAverage([95, 74, 86, 100]));
