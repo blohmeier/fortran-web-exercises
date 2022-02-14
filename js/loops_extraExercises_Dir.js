@@ -128,13 +128,9 @@
 // }
 //Test js
 //Can you explain how this works?
-
-    let a = [1, 23, 100,99, 4, 3]
-
+let a = [1, 23, 100,99, 4, 3]
 console.log(a);
-
 a.sort(function(a,b) {
     return a - b;
 });
-
 console.log(a)
